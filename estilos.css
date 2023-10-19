@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+header {
+	width: 100%;
+	height: auto;
+	gap: 20px;
+  	padding: 20px;
+	text-align: left;
+}
+nav {  	
+	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+ 	position: sticky;
+	fixed: top;
+	width: 100%;
+  	height: 100%;
+	padding: 10px;
+	margin: 10px;
+	z-index: 100;	
+}
+nav ul {
+	list-style-type: none;
+}
+#botonera {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+background-color: #CEBAF8;
+width: 20%;
+height: 400px;
+padding: 40px;
+margin: 8px;
+gap: 20px;
+border-radius: 5px;
+}
+
+nav img {
+	padding-left: 50px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+	
+}
+.carrusel {
+	display: flex;
+	justify-content: left;
+	margin: 5px;
+}
+
+.carrusel ul {
+	list-style: none;
+	margin: 20px;
+	padding: 20;
+	max-width: 900px;
+}
+.carrusel-fotos {
+	display: flex;
+	gap: 10px;
+	overflow: auto;
+}
+.carrusel-fotos img {
+	width: 300px;
+	height: 300px;
+	border: 10px;
+	border: solid;
+	border-color: blueviolet;
+	object-fit: contain;
+	background-color: blueviolet;
+}
+.carrusel1-menu {
+	background-color: blueviolet;
+	border-right: 5px;
+	border-bottom: 5px;
+	border-top: 5px;
+	border-left: 5px;
+	border: solid;
+	border-color: blueviolet;
+}
+form {
+	padding: 15px;
+	margin: 20px;
+	border: solid;
+	border-color: blueviolet;
+	width: 50%;
+	height: 100%;
+	background-color: #CEBAF8;
+}
+#formulario {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	padding:10px;
+	border-radius: 20px;
+	align-items: center;
+	justify-content:space-around;
+}
+input {
+	width: 50%;
+	height: 30px;
+		
+}
+label {
+	color: blueviolet;
+}
+.borrar {
+	color: aliceblue;
+	border-radius: 5px;
+	background-color: blueviolet;	
+}
+
+.borrar:hover {
+	background: darkmagenta;
+}
+.enviar {
+	color: aliceblue;
+	border-radius: 5px;
+	background-color: blueviolet;	
+}
+.enviar:hover {
+	background: darkmagenta;
+}
+ .textarea {
+	 width: 70%;
+	 height: 100px;
+}
+.borrar {
+	width: 20%;
+	height: 30px;
+  	display: flex;
+  	justify-content: center;
+	padding: 5px
+}
+.enviar {
+	width: 20%;
+	height: 30px;
+  	display: flex;
+  	justify-content: center;
+	padding: 5px;
+}
+main {
+	width: 100%;
+  	height: auto;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	gap: 20px;
+  	flex-wrap: wrap;
+  	padding: 20px;
+}
+.sobre-mi {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+background-color: #CEBAF8;
+width: 15%;
+height: 230px;
+padding: 40px;
+margin-left: 18%;
+gap: 20px;
+}
+main ul {
+	list-style-type: none;	
+}	
+footer{
+  width: 100%;
+  height: auto;
+  background-color: #CEBAF8;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+footer img {
+  	width: 84px;
+  	height: 85px;
+  	margin: 15px;
+	border: 0px;
+}
+a {
+	text-decoration: none;
+	color: indigo;
+	font-size: 2em;
+	text-align: center;
+	font-family: "Source Sans Pro", "Merriweather Sans", "Fira Sans", "sans-serif";
+}
+@font-face {
+	font-family: "Source Sans Pro", sans-serif;
+	src: url("fonts/SourceSansPro-Regular.otf") format(opentype);
+	} 
+a:hover {
+	color:aliceblue;
+	font-size: 3em;
+}
+h1 {
+	text-align: center;
+	font-family: "Source Sans Pro", "Merriweather Sans", "Fira Sans", "sans-serif";
+	color: rgba(70,70,70,1.00);
+	font-size: 3.5em;
+}
+@font-face {
+	font-family: "Source Sans Pro", sans-serif;
+	src: url("fonts/SourceSansPro-Regular.otf") format(opentype);
+	font-weight: normal;
+	font-style: normal;
+	} 
+h2 {
+	text-align: center;
+	font-family: "Source Sans Pro", "sans-serif";
+	color: rgba(142,142,142,1.00);
+	font-size: 1.4em;
+}
+@font-face {
+	font-family: "Source Sans Pro", "sans-serif";
+	src: url("fonts/SourceSansPro-Regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+h3 {
+	font-family: "Source Sans Pro", "sans-serif";
+	color:rgba(70,70,70,1.00);
+	font-size: 1.5em;
+}
+@font-face {
+	font-family: "Source Sans Pro";
+	src: url("fonts/SourceSansPro-Regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+	}
+#sobre-mi { 
+	font-family: "Source Sans Pro", "sans-serif";
+	color: rgba(142,142,142,1.00);
+	font-size: 1em;
+}
+@font-face {
+	font-family: "Source Sans Pro", "sans-serif";
+	src: url("fonts/SourceSansPro-Regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+.habilidades { 
+	font-family: "Source Sans Pro", "sans-serif";
+	color: rgba(142,142,142,1.00);
+	font-size: 1em;
+}
+@font-face {
+	font-family: "Source Sans Pro", "sans-serif";
+	src: url("fonts/SourceSansPro-Regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Source Sans Pro", "sans-serif";
+	src: url("fonts/SourceSansPro-Regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+<!-- @media screen and (min-widt: 600px){	
+	header {
+  		padding: 10px;
+	}
+	#botonera {	
+		flex-direction: column;
+		align-items: center;
+	}
+	.img-nav {
+		width: 98%;
+	}
+	#botonera {
+		position: sticky;
+		width: 100%;
+		height: 100%;
+		padding: 10px;
+		margin: 10px;
+		
+	}
+	.carrusel-fotos {
+	overflow: hidden;
+	}
+	.carrusel1-menu {
+		display: block;
+	}
+	.carrusel1-menu img {
+		box-sizing: border-box;
+		width: 50px;
+		height: 40px;
+		border: solid;
+		border-color: blueviolet;
+	}
+	.carrusel-menu img:hover {
+		border: none;
+	}
+	.carrusel-fotos img {
+		width: 500px;
+		height: 400px;
+		}
+}
+}-->

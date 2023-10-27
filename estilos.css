@@ -5,92 +5,68 @@
 	padding: 0px;
 	border: 0px;
 }
+.fondo {
+	margin: 5px;
+	width: 100%;
+	height: auto;
+	z-index: 10;
+	}
+
 header {
 	width: 100%;
 	height: auto;
-	gap: 20px;
-  	padding: 20px;
-	text-align: left;
-}
-nav {  	
-	display: flex;
-  	flex-wrap: wrap;
-  	justify-content: center;
- 	position: sticky;
-	fixed: top;
-	width: 100%;
-  	height: 100%;
-	padding: 10px;
 	margin: 10px;
-	z-index: 100;	
+	padding: 5px;
+	z-index: 20;
+	}
+nav {  
+	position: sticky;
+	top: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-content: space-between;
+	width: 100%;
+  	height: auto;
+	padding: 40px;
+	margin: 10px;
+	background-color: #CEBAF8;
 }
+
 nav ul {
 	list-style-type: none;
 }
-#botonera {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
-background-color: #CEBAF8;
-width: 20%;
-height: 400px;
-padding: 40px;
-margin: 8px;
-gap: 20px;
-border-radius: 5px;
-}
-
-nav img {
-	padding-left: 50px;
-	padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-bottom: 0px;
-	
-}
-.carrusel {
+#galeria-completa {
+	margin: 10px;
+	padding: 10px;
+	width: 950px;
+	height: 950px;
 	display: flex;
-	justify-content: left;
-	margin: 5px;
+	align-content: space-around;
+	align-items: center;
 }
-
-.carrusel ul {
-	list-style: none;
+.habilidades-experiencia {
+	padding: 10px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+}
+#skills {
+	padding: 20px;
 	margin: 20px;
-	padding: 20;
-	max-width: 900px;
+	background-color: #CEBAF8; 
 }
-.carrusel-fotos {
-	display: flex;
-	gap: 10px;
-	overflow: auto;
-}
-.carrusel-fotos img {
-	width: 300px;
-	height: 300px;
-	border: 10px;
-	border: solid;
-	border-color: blueviolet;
-	object-fit: contain;
-	background-color: blueviolet;
-}
-.carrusel1-menu {
-	background-color: blueviolet;
-	border-right: 5px;
-	border-bottom: 5px;
-	border-top: 5px;
-	border-left: 5px;
-	border: solid;
-	border-color: blueviolet;
+#experiencia { 
+	padding: 20px;
+	margin: 20px;
+	background-color: #CEBAF8;
 }
 form {
 	padding: 15px;
 	margin: 20px;
 	border: solid;
 	border-color: blueviolet;
-	width: 50%;
-	height: 100%;
+	width: 40%;
+	height: 500px;
 	background-color: #CEBAF8;
 }
 #formulario {
@@ -149,29 +125,54 @@ main {
 	width: 100%;
   	height: auto;
   	display: flex;
-  	flex-direction: row;
+  	flex-direction: column;
+	justify-content: center;
   	align-items: center;
   	gap: 20px;
   	flex-wrap: wrap;
   	padding: 20px;
 }
-.sobre-mi {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
-background-color: #CEBAF8;
-width: 15%;
-height: 230px;
-padding: 40px;
-margin-left: 18%;
-gap: 20px;
-}
 main ul {
 	list-style-type: none;	
 }	
+.sobre-mi {
+	display: flex;
+	justify-content: center;
+	align-content: flex-start;
+	align-items: center;
+	padding: 10px;
+	margin: 10px;
+}
+
+.texto-sobremi {
+	margin: 10px;
+	padding: 10px;
+	width: 30%;
+}
+.mi-foto {
+	margin: 5px;
+	padding: 5px;
+}
+.agenda {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: flex-start;
+	padding: 10px;
+	margin: 10px;
+}
+.agenda-foto {
+	margin: 5px;
+	padding: 5px;
+	
+}
+.agenda-texto {
+	margin: 10px;
+	padding: 10px;
+	width: 15%;
+}
 footer{
-  width: 100%;
+  width: 100%vh;
   height: auto;
   background-color: #CEBAF8;
   display: flex;
@@ -187,7 +188,7 @@ footer img {
 a {
 	text-decoration: none;
 	color: indigo;
-	font-size: 2em;
+	font-size: 3em;
 	text-align: center;
 	font-family: "Source Sans Pro", "Merriweather Sans", "Fira Sans", "sans-serif";
 }
@@ -197,13 +198,13 @@ a {
 	} 
 a:hover {
 	color:aliceblue;
-	font-size: 3em;
+	font-size: 4em;
 }
 h1 {
 	text-align: center;
 	font-family: "Source Sans Pro", "Merriweather Sans", "Fira Sans", "sans-serif";
-	color: rgba(70,70,70,1.00);
-	font-size: 3.5em;
+	color: indigo;
+	font-size: 6em;
 }
 @font-face {
 	font-family: "Source Sans Pro", sans-serif;
@@ -214,8 +215,8 @@ h1 {
 h2 {
 	text-align: center;
 	font-family: "Source Sans Pro", "sans-serif";
-	color: rgba(142,142,142,1.00);
-	font-size: 1.4em;
+	color: indigo;
+	font-size: 3em;
 }
 @font-face {
 	font-family: "Source Sans Pro", "sans-serif";
@@ -225,8 +226,8 @@ h2 {
 }
 h3 {
 	font-family: "Source Sans Pro", "sans-serif";
-	color:rgba(70,70,70,1.00);
-	font-size: 1.5em;
+	color: indigo;
+	font-size: 2em;
 }
 @font-face {
 	font-family: "Source Sans Pro";
@@ -234,72 +235,160 @@ h3 {
 	font-weight: normal;
 	font-style: normal;
 	}
-#sobre-mi { 
+
+h4 {
+	font-family: "Source Sans Pro", "sans-serif";
+	color: indigo;
+	font-size: 2em;
+}
+@font-face {
+	font-family: "Source Sans Pro";
+	src: url("fonts/SourceSansPro-Light.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+	} 
+.sobre-mi { 
 	font-family: "Source Sans Pro", "sans-serif";
 	color: rgba(142,142,142,1.00);
-	font-size: 1em;
 }
 @font-face {
 	font-family: "Source Sans Pro", "sans-serif";
 	src: url("fonts/SourceSansPro-Regular.otf") format("opentype");
 	font-weight: normal;
 	font-style: normal;
+
 }
-.habilidades { 
+#experiencia { 
+	font-family: "Source Sans Pro", "sans-serif";
+	color: dimgrey;
+	font-size: 1.5em;
+}
+@font-face {
+	font-family: "Source Sans Pro", "sans-serif";
+	src: url("fonts/SourceSansPro-Light.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+.texto-sobremi {
 	font-family: "Source Sans Pro", "sans-serif";
 	color: rgba(142,142,142,1.00);
+	font-size: 1.5em;
+	text-align: left;
+}
+@font-face {
+	font-family: "Source Sans Pro", "sans-serif";
+	src: url("fonts/SourceSansPro-Light.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+#skills {
+	font-family: "Source Sans Pro", "sans-serif";
+	color: dimgrey;
+	font-size: 1.5em;
+}
+@font-face {
+	font-family: "Source Sans Pro", "sans-serif";
+	src: url("fonts/SourceSansPro-Light.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
+}
+p {
+	font-family: "Source Sans Pro", "sans-serif";
+	color: dimgrey;
+	font-size: 1.5em;
+}
+@font-face {
+	font-family: "Source Sans Pro", "sans-serif";
+	src: url("fonts/SourceSansPro-Light.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;	
+}
+
+
+@media screen and (max-width: 600px) {
+	.fondo {
+	margin: 2px;
+	}
+header {
+	margin: 2px;
+	padding: 2px;
+	}
+nav {  
+	flex-direction: column;
+  	height: auto;
+	padding: 0px;
+	margin: 0px;
+	}
+
+.mi-foto {
+	flex-direction: column;
+	margin: 5px;
+	width: 80%;
+}
+	h1 {
+		font-size: 3em;
+	}
+	a {
+		font-size: 1.5em;
+	}
+	a:hover {
+	font-size: 2em;
+}
+	h2 {
+		font-size: 1.5em;
+	}
+	.sobre-mi {
+	width: 100%;
+	flex-direction: column;
+	padding: 2px;
+	margin: 2px;
+	font-size: 0.8em;
+}
+	h4 {
+		font-size: 1.5em;
+	}
+.texto-sobremi {
+	flex-direction: column;
+	justify-content: center;
 	font-size: 1em;
+	margin: 5px;
+	padding: 5px;
+	width: 80%;
 }
-@font-face {
-	font-family: "Source Sans Pro", "sans-serif";
-	src: url("fonts/SourceSansPro-Regular.otf") format("opentype");
-	font-weight: normal;
-	font-style: normal;
+	.fondo {
+	margin: 2px;
+	}
+.habilidades-experiencia {
+	padding: 2px;
+	margin: 2px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
 }
-@font-face {
-	font-family: "Source Sans Pro", "sans-serif";
-	src: url("fonts/SourceSansPro-Regular.otf") format("opentype");
-	font-weight: normal;
-	font-style: normal;
+#skills {
+	padding: 10px;
+	margin: 10px; 
+	font-size: 1em;
+	background-color: aliceblue;
 }
-<!-- @media screen and (min-widt: 600px){	
-	header {
-  		padding: 10px;
+#experiencia { 
+	padding: 10px;
+	margin: 10px;
+	font-size: 1em;
+	background-color: aliceblue;
 	}
-	#botonera {	
-		flex-direction: column;
-		align-items: center;
+main {
+	margin: 3px;
+	padding: 3px;
 	}
-	.img-nav {
-		width: 98%;
+	footer {
+		padding: 5px;
+		margin: 5px;
+		height: 70px;
 	}
-	#botonera {
-		position: sticky;
-		width: 100%;
-		height: 100%;
-		padding: 10px;
-		margin: 10px;
-		
-	}
-	.carrusel-fotos {
-	overflow: hidden;
-	}
-	.carrusel1-menu {
-		display: block;
-	}
-	.carrusel1-menu img {
-		box-sizing: border-box;
-		width: 50px;
-		height: 40px;
-		border: solid;
-		border-color: blueviolet;
-	}
-	.carrusel-menu img:hover {
-		border: none;
-	}
-	.carrusel-fotos img {
-		width: 500px;
-		height: 400px;
-		}
+	footer img {
+		width: 50%;
+		height: auto;
+	}	
 }
-}-->
